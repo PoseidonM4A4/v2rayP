@@ -42,10 +42,10 @@ namespace v2rayP.Util
         public static void Start()
         {
             if (stream != null) stream.Close();
-            System.Diagnostics.Debug.Listeners.Clear();
+            Trace.Listeners.Clear();
             stream = new FileStream(LogFilePath, FileMode.Append, FileAccess.Write, FileShare.Read);
-            System.Diagnostics.Debug.Listeners.Add(new TextWriterTraceListener(stream, "logger"));
-            System.Diagnostics.Debug.AutoFlush = true;
+            Trace.Listeners.Add(new TextWriterTraceListener(stream, "logger"));
+            Trace.AutoFlush = true;
         }
 
         static void Log(LogLevel level, Object obj, string section = null)
@@ -58,7 +58,7 @@ namespace v2rayP.Util
             lock (Lock)
             {
                 if (!CheckDate()) GenerateLogFilename();
-                System.Diagnostics.Debug.WriteLine(text);
+                Trace.WriteLine(text);
             }
         }
 
