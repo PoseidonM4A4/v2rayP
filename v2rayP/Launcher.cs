@@ -87,8 +87,8 @@ namespace v2rayP
                 default:
                     break;
             }
-            NotifyIcon.SwitchProxyMode(mode);
             Setting.Mode = mode;
+            NotifyIcon.SwitchProxyMode(mode);
             Setting.Save();
         }
 
