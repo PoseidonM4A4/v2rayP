@@ -25,7 +25,7 @@ namespace v2rayP
         public const string GFWListName = "gfwlist.txt";
 
         // V2Ray Setting
-        public static readonly V2RayVersion V2RayMinimumRequiredVersion = new V2RayVersion(2, 5, 0);
+        public static readonly V2RayVersion V2RayMinimumRequiredVersion = new V2RayVersion(3, 0, 0);
         public const string V2RayDirectory = "core";
         public const string V2RayExecutableName = "v2ray.exe";
         public const string V2RayConfigFilename = "config.json";
