@@ -32,6 +32,7 @@ namespace v2rayP
             Logging.Info($"{Setting.AppName} {Setting.AppVersion}");
 
             Setting.Load();
+            StartPACServer();
 
             NotifyIcon.Create();
             NotifyIcon.UpdateServers();

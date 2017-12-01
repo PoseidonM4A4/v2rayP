@@ -102,6 +102,7 @@ namespace v2rayP.UI
 
                 if (restartPAC)
                 {
+                    Launcher.Pac.UpdatePacFile();
                     Launcher.Pac.Start();
                     if (Setting.Mode == Model.ProxyMode.PAC) Launcher.SwitchProxyMode(Model.ProxyMode.PAC);
                 }

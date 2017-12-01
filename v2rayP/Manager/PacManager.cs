@@ -28,7 +28,7 @@ namespace v2rayP.Manager
         public int Port;
         public int HttpPort;
 
-        public string PacScriptURL => $"http://127.0.0.1:{Port}/pac.js?=t{random.Next()}";
+        public string PacScriptURL => $"http://127.0.0.1:{Port}/pac.js?t={random.Next()}";
         public string PacScript = String.Empty;
 
         Thread ThreadPacServer;
@@ -41,6 +41,8 @@ namespace v2rayP.Manager
 
             FileHelper.TouchFile(PacPath);
             PacScript = File.ReadAllText(PacPath);
+
+            PacListener = new HttpListener() { Prefixes = { $"http://127.0.0.1:{Port}/" } };
 
             ThreadPacServer = new Thread(new ThreadStart(PacServerThreadWorker));
             ThreadPacServer.Start();
