@@ -10,42 +10,48 @@ namespace v2rayP.Model
     {
         public int Major { set; get; }
         public int Minor { set; get; }
+        public int Build { set; get; }
 
         public V2RayVersion()
         {
 
         }
 
-        public V2RayVersion(int Major, int Minor)
+        public V2RayVersion(int Major, int Minor, int Build)
         {
             this.Major = Major;
             this.Minor = Minor;
+            this.Build = Build;
         }
 
-        public static bool operator >=(V2RayVersion lOperand, V2RayVersion rOperand)
+        public static bool operator >=(V2RayVersion left, V2RayVersion right)
         {
-            return (lOperand.Major > rOperand.Major)
-                || (lOperand.Major == rOperand.Major && lOperand.Minor >= rOperand.Minor);
+            return (left.Major > right.Major)
+                || (left.Major == right.Major && left.Minor > right.Minor)
+                || (left.Major == right.Major && left.Minor == right.Minor && left.Build >= right.Build);
         }
 
-        public static bool operator <=(V2RayVersion lOperand, V2RayVersion rOperand)
+        public static bool operator <=(V2RayVersion left, V2RayVersion right)
         {
-            return (lOperand.Major < rOperand.Major)
-                || (lOperand.Major == rOperand.Major && lOperand.Minor <= rOperand.Minor);
+            return (left.Major < right.Major)
+                || (left.Major == right.Major && left.Minor < right.Minor)
+                || (left.Major == right.Major && left.Minor == right.Minor && left.Build <= right.Build);
         }
 
-        public static bool operator >(V2RayVersion lOperand, V2RayVersion rOperand)
+        public static bool operator >(V2RayVersion left, V2RayVersion right)
         {
-            return (lOperand.Major > rOperand.Major)
-                || (lOperand.Major == rOperand.Major && lOperand.Minor > rOperand.Minor);
+            return (left.Major > right.Major)
+                || (left.Major == right.Major && left.Minor > right.Minor)
+                || (left.Major == right.Major && left.Minor == right.Minor && left.Build > right.Build);
         }
 
-        public static bool operator <(V2RayVersion lOperand, V2RayVersion rOperand)
+        public static bool operator <(V2RayVersion left, V2RayVersion right)
         {
-            return (lOperand.Major < rOperand.Major)
-                || (lOperand.Major == rOperand.Major && lOperand.Minor < rOperand.Minor);
+            return (left.Major < right.Major)
+                || (left.Major == right.Major && left.Minor < right.Minor)
+                || (left.Major == right.Major && left.Minor == right.Minor && left.Build < right.Build);
         }
 
-        public override string ToString() => $"v{Major}.{Minor}";
+        public override string ToString() => $"v{Major}.{Minor}.{Build}";
     }
 }

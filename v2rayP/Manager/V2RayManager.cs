@@ -411,7 +411,7 @@ namespace v2rayP.Manager
 
             if (!process.HasExited) process.Kill();
 
-            var regex = new Regex(@"^V2Ray v(\d+)\.(\d+).*?(\d+)");
+            var regex = new Regex(@"^V2Ray\sv(\d+).(\d+)(?:.(\d+))?\s");
             var match = regex.Match(stdout);
 
             try
@@ -421,6 +421,7 @@ namespace v2rayP.Manager
                 {
                     Major = Convert.ToInt32(match.Groups[1].ToString()),
                     Minor = Convert.ToInt32(match.Groups[2].ToString()),
+                    Build = Convert.ToInt32(string.IsNullOrWhiteSpace(match.Groups[3].ToString()) ? "0" : match.Groups[3].ToString()),
                 };
                 return version;
             }
@@ -453,7 +454,7 @@ namespace v2rayP.Manager
             var json = JsonConvert.DeserializeObject<Dictionary<string, object>>(releaseInfo);
             var versionTag = json["tag_name"].ToString();
 
-            var regex = new Regex(@"^v(\d+).(\d+?)$");
+            var regex = new Regex(@"^v(\d+).(\d+?)(?:.(\d+))?$");
             var match = regex.Match(versionTag);
 
             try
@@ -463,6 +464,7 @@ namespace v2rayP.Manager
                 {
                     Major = Convert.ToInt32(match.Groups[1].ToString()),
                     Minor = Convert.ToInt32(match.Groups[2].ToString()),
+                    Build = Convert.ToInt32(string.IsNullOrWhiteSpace(match.Groups[3].ToString()) ? "0" : match.Groups[3].ToString()),
                 };
                 return version;
             }

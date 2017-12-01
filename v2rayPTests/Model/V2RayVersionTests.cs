@@ -14,10 +14,10 @@ namespace v2rayP.Model.Tests
         [TestMethod()]
         public void V2RayVersionComparationTest()
         {
-            var version1 = new V2RayVersion(1, 0);
-            var version2 = new V2RayVersion(1, 1);
-            var version3 = new V2RayVersion(2, 0);
-            var version4 = new V2RayVersion(1, 0);
+            var version1 = new V2RayVersion(1, 0, 0);
+            var version2 = new V2RayVersion(1, 1, 0);
+            var version3 = new V2RayVersion(2, 0, 0);
+            var version4 = new V2RayVersion(1, 0, 0);
 
             Assert.IsTrue(version1 >= version4);
             Assert.IsTrue(version4 <= version1);
