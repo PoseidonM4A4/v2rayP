@@ -14,11 +14,11 @@ Read this in other Language: [English](./README.md), [简体中文](./README.zh-
 ## Supported Windows Version
 Vista and later versions With .Net Framework >= 4.5
 
-## Features:
+## Features
 * Complete v2ray server configuration options
 * Proxy mode switcher(Direct, Global, PAC)
 
-## Future Plan: 
+## Future Plan
 * Auto updater for both ``v2ray-core`` and ``v2ray`` 
 * Shadowsocks outbound
 * Routing settings
