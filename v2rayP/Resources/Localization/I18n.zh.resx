@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>该功能正在开发！</value>
+  </data>
+  <data name="FormAbout" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="FormEditServers" xml:space="preserve">
+    <value>编辑服务器</value>
+  </data>
+  <data name="FormSetting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="FormShowLog" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="Logging" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="MenuGroupHelp" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="MenuGroupPAC" xml:space="preserve">
+    <value>PAC 设置</value>
+  </data>
+  <data name="MenuGroupProxyMode" xml:space="preserve">
+    <value>代理模式</value>
+  </data>
+  <data name="MenuGroupServers" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="MenuItemAbout" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="MenuItemCheckForUpdate" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="MenuItemCopyPACScriptURL" xml:space="preserve">
+    <value>复制 PAC 脚本地址</value>
+  </data>
+  <data name="MenuItemDirectMode" xml:space="preserve">
+    <value>直连模式</value>
+  </data>
+  <data name="MenuItemEditServers" xml:space="preserve">
+    <value>编辑服务器</value>
+  </data>
+  <data name="MenuItemEditUserRules" xml:space="preserve">
+    <value>编辑用户自定义规则</value>
+  </data>
+  <data name="MenuItemExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MenuItemFeedback" xml:space="preserve">
+    <value>反馈</value>
+  </data>
+  <data name="MenuItemGlobalMode" xml:space="preserve">
+    <value>全局模式</value>
+  </data>
+  <data name="MenuItemKeepSystemProxyMode" xml:space="preserve">
+    <value>保持系统代理</value>
+  </data>
+  <data name="MenuItemPacMode" xml:space="preserve">
+    <value>PAC 模式</value>
+  </data>
+  <data name="MenuItemSetting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="MenuItemShowLog" xml:space="preserve">
+    <value>显示日志</value>
+  </data>
+  <data name="MenuItemUpdateGFWList" xml:space="preserve">
+    <value>更新 GFWList</value>
+  </data>
+  <data name="MenuItemWiki" xml:space="preserve">
+    <value>Wiki</value>
+  </data>
+  <data name="MsgCantFindV2Ray" xml:space="preserve">
+    <value>无法在目录 {1} 中找到 {0}</value>
+  </data>
+  <data name="MsgFailToCreateDirectoryFor" xml:space="preserve">
+    <value>无法为 {0} 初始化目录。
+请检查目录 {1} 是否被占用</value>
+  </data>
+  <data name="MsgFailToExtractPrivoxy" xml:space="preserve">
+    <value>初始化 Privoxy 失败。</value>
+  </data>
+  <data name="MsgFailToWriteJSON" xml:space="preserve">
+    <value>写入 JSON 到 {0} 失败
+原因：{1}</value>
+  </data>
+  <data name="MsgFallbackToDirectUpdateGFWList" xml:space="preserve">
+    <value>因为 v2ray-core 不在运行状态，使用直连方式更新 GFWList</value>
+  </data>
+  <data name="MsgInstanceExist" xml:space="preserve">
+    <value>{0} 正在运行了</value>
+  </data>
+  <data name="MsgPleaseInputAddress" xml:space="preserve">
+    <value>请输入服务器地址（Address）</value>
+  </data>
+  <data name="MsgPleaseInputId" xml:space="preserve">
+    <value>请输入 VMess 的 用户 ID（User ID）</value>
+  </data>
+  <data name="MsgPleaseInvalidNumberField" xml:space="preserve">
+    <value>无效的：{0}
+范围：{1}
+默认值：{2}</value>
+  </data>
+  <data name="MsgPleaseSelectGivenValues" xml:space="preserve">
+    <value>请从 {0} 中选择给定的选项</value>
+  </data>
+  <data name="MsgV2RayFailedToStart" xml:space="preserve">
+    <value>启动 v2ray-core 失败，请通过日志查明原因</value>
+  </data>
+  <data name="MsgV2RayFailedToStartDueToInexistence" xml:space="preserve">
+    <value>启动 v2ray-core 失败，请将相关文件放在文件夹 "{0}" 下！</value>
+  </data>
+  <data name="MsgV2RayIsTooOld" xml:space="preserve">
+    <value>v2ray-core 版本过于老旧，版本最低要求为 {0}</value>
+  </data>
+  <data name="NewV2RayServer" xml:space="preserve">
+    <value>V2Ray 服务器</value>
+  </data>
+  <data name="NoAvailableServers" xml:space="preserve">
+    <value>没有可用的服务器</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="NotifyIconTextTemplate" xml:space="preserve">
+    <value>模式：{0}
+服务器：{1}</value>
+  </data>
+  <data name="ProxyModeDirect" xml:space="preserve">
+    <value>直连模式</value>
+  </data>
+  <data name="ProxyModeGlobal" xml:space="preserve">
+    <value>全局模式</value>
+  </data>
+  <data name="ProxyModeKeepSystemProxy" xml:space="preserve">
+    <value>保持系统代理</value>
+  </data>
+  <data name="ProxyModePac" xml:space="preserve">
+    <value>PAC 模式</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SettingFormAcceptLAN" xml:space="preserve">
+    <value>允许局域网的连接</value>
+  </data>
+  <data name="SettingFormAutoStart" xml:space="preserve">
+    <value>自动启动</value>
+  </data>
+  <data name="SettingFormEnableAccessLog" xml:space="preserve">
+    <value>启用访问日志</value>
+  </data>
+  <data name="SettingFormEnableErrorLog" xml:space="preserve">
+    <value>启用错误日志</value>
+  </data>
+  <data name="SettingFormGFWListURL" xml:space="preserve">
+    <value>GFWList 路径：</value>
+  </data>
+  <data name="SettingFormHTTPPort" xml:space="preserve">
+    <value>HTTP 代理端口：</value>
+  </data>
+  <data name="SettingFormLocalProxySetting" xml:space="preserve">
+    <value>本地代理服务器设置：</value>
+  </data>
+  <data name="SettingFormLogLevel" xml:space="preserve">
+    <value>日志等级：</value>
+  </data>
+  <data name="SettingFormPACServerPort" xml:space="preserve">
+    <value>PAC 服务器端口：</value>
+  </data>
+  <data name="SettingFormSOCKPort" xml:space="preserve">
+    <value>SOCK5 代理端口：</value>
+  </data>
+  <data name="SettingFormUpdateViaProxy" xml:space="preserve">
+    <value>通过代理更新</value>
+  </data>
+  <data name="SettingFormV2RayPSetting" xml:space="preserve">
+    <value>v2rayP 设置</value>
+  </data>
+  <data name="UpdateGFWListFailed" xml:space="preserve">
+    <value>更新 GFWList 失败</value>
+  </data>
+  <data name="UpdateGFWListSuccess" xml:space="preserve">
+    <value>更新 GFWList 成功</value>
+  </data>
+</root>
