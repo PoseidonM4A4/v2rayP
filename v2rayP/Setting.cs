@@ -16,7 +16,7 @@ namespace v2rayP
     {
         #region Constants
         public const string AppName = "v2rayP";
-        public const string AppVersion = "0.1.1";
+        public static string AppVersion => $"v{Application.ProductVersion}";
         public const string SettingFilename = "settings.json";
 
         // PAC Server 
