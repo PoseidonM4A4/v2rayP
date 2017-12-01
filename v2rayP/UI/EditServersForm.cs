@@ -31,7 +31,6 @@ namespace v2rayP.UI
             buttonClose.Text = I18n.Close;
 
             needSync = true;
-            previousSelectedIndex = 0;
 
             // In the form designer, these three panels are set DOCK = None
             // in order to make UI designing easier.
@@ -71,6 +70,7 @@ namespace v2rayP.UI
             listBoxServersList.DataSource = servers;
 
             if (servers.Count == 0) AddServer();
+            previousSelectedIndex = listBoxServersList.SelectedIndex;
             LoadSelectedServerIntoEditor();
         }
 
@@ -532,7 +532,7 @@ namespace v2rayP.UI
             if (servers.Count == 1) return;
             needSync = false;
             servers.RemoveAt(previousSelectedIndex);
-            previousSelectedIndex -= 1;
+            previousSelectedIndex = listBoxServersList.SelectedIndex;
             LoadSelectedServerIntoEditor();
             needSync = true;
         }
