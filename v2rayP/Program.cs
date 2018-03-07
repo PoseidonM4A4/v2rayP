@@ -23,6 +23,7 @@ namespace v2rayP
         static void Main(string[] args)
         {
             AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -52,6 +53,20 @@ namespace v2rayP
 
                 Launcher.Start();
             }
+        }
+
+        private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            var ex = e.ExceptionObject as Exception;
+            try
+            {
+                Logging.Exception(ex);
+            }
+            catch { }
+
+            MsgBox.Show($"Unhandled exception occurs:\r\n" +
+                $"Message: {ex.Message}\r\n" +
+                $"Stack: {ex.StackTrace}");
         }
 
         private static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
