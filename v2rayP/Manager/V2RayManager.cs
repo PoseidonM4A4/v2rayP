@@ -411,7 +411,7 @@ namespace v2rayP.Manager
 
             if (!process.HasExited) process.Kill();
 
-            var regex = new Regex(@"^V2Ray\sv(\d+).(\d+)(?:.(\d+))?\s");
+            var regex = new Regex(@"^V2Ray\sv(\d+).(\d+)(?:.(\d+))?");
             var match = regex.Match(stdout);
 
             try
